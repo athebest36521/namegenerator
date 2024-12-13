@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>What's My Fantsy Name?</title>
+    <title>What's My Fantasy Name?</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -47,22 +47,25 @@
                 </div>
                 <div class="mb-3">
                     <label for="favoriteColor" class="form-label"> Favorite Color</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Enter your Favorite Color"
+                    <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your Favorite Color"
                         required />
                 </div>
                 <div class="mb-3">
                     <label for="favoriteAnimal" class="form-label">
                         Favorite Animal</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Enter your Favorite Animal"
+                    <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your Favorite Animal"
                         required />
                 </div>
-                <button
-                    type="submit"
+               \
+                <div
                     class="btn btn-primary w-100" onclick="genFullName()"
                 >
                     Generate Name
-                </button>
-                
+                </div>
+                <div id="result">
+
+
+                </div>
             </form>
             
         </div>
@@ -71,6 +74,7 @@
         <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

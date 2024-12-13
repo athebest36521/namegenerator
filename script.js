@@ -10,7 +10,8 @@ function genPrefix(firstName) {
 }
 //Generate First Name of name
 function genFirstName(firstName) {
-    const firstLetter = firstName.charAt(0).toLowercase();
+    console.log(firstName)
+    const firstLetter = firstName.charAt(0).toLowerCase();
     if (firstLetter === "a") {
         return "Ari";
     } else if (
@@ -38,7 +39,7 @@ function genMiddleName(roadType, favoriteColor) {
 
 //Generate Last name
 function genLastName(lastName){
-    const lastLetter= lastName.charAt(lastName.length-1).toLowercase()
+    const lastLetter= lastName.charAt(lastName.length-1).toLowerCase()
     if (lastLetter==='a'){
         return 'Shadow'
     }
@@ -70,5 +71,20 @@ const roadType = document.getElementById("roadType").value.trim();
 const favoriteColor = document.getElementById("favoriteColor").value.trim();
 const favoriteAnimal = document.getElementById("favoriteAnimal").value.trim();
 
+const prefix = genPrefix(firstName)
+const newFirstName = genFirstName(firstName)
+const middleName = genMiddleName(roadType, favoriteColor)
+const newLastName = genLastName(lastName)
+const suffix = genSuffix(favoriteAnimal)
 
+//functions to capitalize words
+const capitalizePrefix = capitalize(prefix)
+const capitalizedFirstName = capitalize(newFirstName)
+const capitalizedMiddleName = capitalize(middleName)
+const capitalizedLastName = capitalize(newLastName)
+const fullName = `${capitalizePrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
+document.getElementById('result').textContent = fullName
+}
+function capitalize(word){
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
 }

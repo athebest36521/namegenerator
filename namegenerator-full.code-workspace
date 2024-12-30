@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../OneDrive Avyukt - FRHSD/Downloads/gsap-public"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "namegenerator"
+	}
+}

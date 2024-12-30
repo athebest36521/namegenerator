@@ -1,5 +1,10 @@
 alert("Please fill out the forms beore you proceed...");
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
 //Generate prefix of name
 function genPrefix(firstName) {
     if (firstName.length > 4) {
